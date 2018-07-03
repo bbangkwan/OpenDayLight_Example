@@ -6,4 +6,21 @@ module example {
     revision "2015-01-05" {
         description "Initial revision of example model";
     }
+
+    rpc rpc-test{
+        input{
+            leaf first-input{
+                type string;
+            }
+            leaf second-input{
+                type int32;
+            }
+        }
+
+        output{
+            leaf test-output{
+                type string;
+            }
+        }
+    }
 }
