@@ -9,10 +9,10 @@ import org.opendaylight.yangtools.yang.binding.Augmentable;
  * &lt;br&gt;(Source path: &lt;i&gt;META-INF/yang/example.yang&lt;/i&gt;):
  * &lt;pre&gt;
  * container input {
- *     leaf first-input {
+ *     leaf firstInput {
  *         type string;
  *     }
- *     leaf second-input {
+ *     leaf secondInput {
  *         type int32;
  *     }
  * }

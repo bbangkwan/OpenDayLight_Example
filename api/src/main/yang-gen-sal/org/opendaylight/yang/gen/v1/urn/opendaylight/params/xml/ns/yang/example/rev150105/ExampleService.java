@@ -10,16 +10,16 @@ import java.util.concurrent.Future;
  * &lt;pre&gt;
  * rpc rpc-test {
  *     input {
- *         leaf first-input {
+ *         leaf firstInput {
  *             type string;
  *         }
- *         leaf second-input {
+ *         leaf secondInput {
  *             type int32;
  *         }
  *     }
  *     
  *     output {
- *         leaf test-output {
+ *         leaf testOutput {
  *             type string;
  *         }
  *     }

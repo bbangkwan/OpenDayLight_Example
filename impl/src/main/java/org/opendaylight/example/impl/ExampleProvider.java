@@ -20,16 +20,13 @@ public class ExampleProvider implements BindingAwareProvider, AutoCloseable {
 
     private static final Logger LOG = LoggerFactory.getLogger(ExampleProvider.class);
     
-    private RpcProviderRegistry rpcProviderRegistry;
     private RpcRegistration<ExampleService> exampleServiceRpcRegistration;
 
     @Override
     public void onSessionInitiated(ProviderContext session) {
         LOG.info("ExampleProvider Session Initiated");
         
-        this.rpcProviderRegistry = session.getSALService(RpcProviderRegistry.class);
-        
-        exampleServiceRpcRegistration = session.addRpcImplementation(ExampleService.class, new ExampleImpl(this.rpcProviderRegistry));
+        exampleServiceRpcRegistration = session.addRpcImplementation(ExampleService.class, new ExampleImpl());
     }
 
     @Override
